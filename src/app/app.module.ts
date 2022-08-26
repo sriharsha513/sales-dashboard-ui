@@ -12,6 +12,8 @@ import { MainComponent } from './shared/components/main/main.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { LayoutModule } from './layout/layout.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { ProfileComponent } from './pages/profile/profile.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    LayoutModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
